@@ -1,11 +1,11 @@
-#task1
+# task1
 # numberDay = int(input('введите день недели'))
 # if numberDay == 6 or numberDay == 7:
 #     print('этот день - выходной')
 # else:
 #     print('это будний день')
 
-#task2
+# task2
 # def checkExpression():
 #     xyz = ['X','Y','Z']
 #     xyz_list = []
@@ -23,7 +23,7 @@
 # else:
 #     print('выражение ложно')
 
-#task3 
+# task3
 # number_x = float(input('x: '))
 # number_y = float(input('y: '))
 # if number_x != 0 or number_y != 0:
@@ -42,7 +42,18 @@
 # else:
 #     print('точка находится в центре координат')
 
-#task4
+# task4
+numb = int(input('введите номер четверти'))
+if numb == 1:
+    print('x(0,бесконечность)\ny(0,бесконечность)')
+if numb == 2:
+    print('x(0,-бесконечность)\ny(0,бесконечность)')
+if numb == 3:
+    print('x(0,-бесконечность)\ny(0,-бесконечность)') 
+if numb == 4:
+    print('x(0,бесконечность)\ny(0,-бесконечность)')
+       
+# task5
 # import math
 # A_x,A_y = float(input('A(x): ')),float(input('A(y): '))
 # B_x,B_y = float(input('B(x): ')),float(input('B(y): '))
