@@ -62,27 +62,37 @@ task3
 '''
 task4
 '''
+# import random
+# number = int(input("введите число N "))
+# list_1 = []
+# for i in range(0,number):
+#     list_1.append(random.randint(-number,number)) 
+# print(list_1)
+
+# count = 0
+# print(f'Сейчас вы будете вводить позиции нужных вам элементов,\nразмер списка равен {number},не выходите за рамки размера списка,\nкак только вы закончите, введите точку(.): ')
+# prod = 1
+# while count < 100:
+#     pos = input()
+#     if pos == '.':
+#         print(f'произведение = {prod}')
+#         break
+#     pos = int(pos)
+#     if pos < 0:
+#         pos *=-1
+#     if pos > number-1:
+#         print(f'вы вышли за рамки списка, позиция равна {number-1}')
+#         pos = number-1
+#     print(f'на позиции с индексом {pos} находится: {list_1[pos]}')
+#     prod *= list_1[pos]
+#     print(f'текущее произведение = {prod}')
+'''
+additional
+'''
 import random
 number = int(input("введите число N "))
-list_1 = []
-for i in range(0,number):
-    list_1.append(random.randint(-number,number)) 
-print(list_1)
-
-count = 0
-print(f'Сейчас вы будете вводить позиции нужных вам элементов,\nразмер списка равен {number},не выходите за рамки размера списка,\nкак только вы закончите, введите точку(.): ')
-prod = 1
-while count < 100:
-    pos = input()
-    if pos == '.':
-        print(f'произведение = {prod}')
-        break
-    pos = int(pos)
-    if pos < 0:
-        pos *=-1
-    if pos > number-1:
-        print(f'вы вышли за рамки списка, позиция равна {number-1}')
-        pos = number-1
-    print(f'на позиции с индексом {pos} находится: {list_1[pos]}')
-    prod *= list_1[pos]
-    print(f'текущее произведение = {prod}')
+rand_number = random.randint(-1000,1000)
+if rand_number%number == 0:
+    print(f'число {rand_number} кратко {number}')
+else:
+    print(rand_number)
