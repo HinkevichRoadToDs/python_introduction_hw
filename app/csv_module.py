@@ -1,5 +1,4 @@
 import pandas as pd
-from ui import fieldnames
 import csv
 
 fieldnames = ['id', 'name', 'surname', 'email', 'salary']
@@ -25,10 +24,16 @@ def filter_data(filter_on, args: dict):
 
 
 def append_data(dict_new):
+    with open('app/data/data.csv', 'r') as file:
+        csv_reader = csv.DictReader(file, fieldnames=fieldnames)
+        max_id = 1
+        for row in csv_reader:
+            try:
+                if max_id < int(row['id']):
+                    max_id = int(row['id'])
+            except:
+                continue
+    dict_new['id'] = max_id + 1
     with open('app/data/data.csv', 'a', newline='') as file:
         csv_writer = csv.DictWriter(file, fieldnames=fieldnames)
-        max_id = 1
-        for row in csv_writer:
-            if max_id < int(row['id']):
-                max_id = int(row['id'])
         csv_writer.writerow(dict_new)

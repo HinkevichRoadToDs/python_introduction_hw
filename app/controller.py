@@ -1,5 +1,5 @@
-from ui import get_mode, get_parameter, display_filtered_data
-from csv_module import filter_data
+from ui import get_mode, get_parameter, display_filtered_data,get_newdata
+from csv_module import filter_data,append_data
 
 
 def start_engine():
@@ -10,3 +10,5 @@ def start_engine():
     if mode == 2:
         data = filter_data(False, {})
         display_filtered_data(data)
+    if mode == 3:
+        append_data(get_newdata())

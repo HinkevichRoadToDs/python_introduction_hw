@@ -26,5 +26,9 @@ def get_parameter():
 def display_filtered_data(data):
     print('Результат поиска:\n', data)
 
-
+def get_newdata():
+    dict_new = {}
+    for item in fieldnames[1:]:
+        dict_new[item] = input(f'Введите {item}: ')
+    return dict_new
 
