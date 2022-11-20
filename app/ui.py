@@ -1,6 +1,7 @@
 from csv_module import fieldnames
 def get_mode():
     mode = int(input('Введите действие, которое вы хотите совершить:\n'
+                     '0 - завершить работу\n'
                      '1 - найти запись в БД\n'
                      '2 - посмотреть структуру БД\n'
                      '3 - добавить запись в БД\n'
@@ -32,3 +33,26 @@ def get_newdata():
         dict_new[item] = input(f'Введите {item}: ')
     return dict_new
 
+
+def get_row_number():
+    row_number = input("Введите id записи, которую нужно изменить: ")
+    return int(row_number)
+def get_changes():
+    changes_dict = {}
+    print('Какие атрибуты вы будете менять?\n'
+          '1 - name\n'
+          '2 - surname\n'
+          '3 - email\n'
+          '4 - salary : ')
+    for i in range(4):
+        choise = input('Введите номер атрибута или точку, чтобы закончить: ')
+        if choise != '.':
+            changes_dict[fieldnames[int(choise)]] = input('Введите новое значение: ')
+        else:
+            break
+    return changes_dict
+
+
+def get_del_id():
+    row_number = input("Введите id записи, которую нужно удалить: ")
+    return int(row_number)

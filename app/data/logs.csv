@@ -1,0 +1,16 @@
+time,action,searching,id,changes
+17:29:41;0;None;None;None
+17:30:27;1;{'name': 'Thomas', 'surname': 'Frank'};None;None
+17:48:15;2;None;None;None
+17:50:33;3;None;6;{'name': 'George', 'surname': 'Yataryan', 'email': 'ara-kusama@gmail.com', 'salary': '2900'}
+17:52:43;0;None;None;None
+18:17:26;3;None;7;{'name': 'Artur', 'surname': 'Johns', 'email': 'arty-1111@yahoo.com', 'salary': '3200'}
+18:17:30;0;None;None;None
+18:23:49;5;None;7;{'salary': '3300'}
+18:23:53;0;None;None;None
+18:47:50;4;None;8;None
+18:48:07;0;None;None;None
+18:51:30;4;None;8;{'name': 'jngsdfj', 'surname': 'sdfdsf', 'email': 'sfdsfs', 'salary': '10000'}
+18:51:32;0;None;None;None
+18:53:44;4;None;8;{'name': 'adsf', 'surname': 'dasf', 'email': 'adsf', 'salary': '10000'}
+18:53:46;0;None;None;None
